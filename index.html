@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanele Mathonsi - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <!-- Navigation -->
+  <nav class="bg-blue-600 text-white p-4 sticky top-0 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Sanele Mathonsi</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#home" class="hover:underline">Home</a></li>
+        <li><a href="#about" class="hover:underline">About</a></li>
+        <li><a href="#projects" class="hover:underline">Projects</a></li>
+        <li><a href="#contact" class="hover:underline">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+    <div class="text-center">
+      <h2 class="text-5xl font-bold mb-4">Welcome to My Portfolio</h2>
+      <p class="text-xl mb-6">I'm Sanele Mathonsi, a passionate developer building innovative projects.</p>
+      <a href="#projects" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
+      <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+        Hi, I'm Sanele Mathonsi, a [your profession, e.g., web developer/software engineer] with a passion for creating innovative solutions. I specialize in [your skills, e.g., JavaScript, Python, React]. In my free time, I enjoy [your hobbies, e.g., coding, gaming, hiking].
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">My Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project Card 1 -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-semibold mb-2">Project One</h3>
+          <p class="text-gray-600 mb-4">A brief description of your project. What it does, technologies used, etc.</p>
+          <a href="#" class="text-blue-600 hover:underline">View Project</a>
+        </div>
+        <!-- Project Card 2 -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-semibold mb-2">Project Two</h3>
+          <p class="text-gray-600 mb-4">A brief description of your project. What it does, technologies used, etc.</p>
+          <a href="#" class="text-blue-600 hover:underline">View Project</a>
+        </div>
+        <!-- Project Card 3 -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-semibold mb-2">Project Three</h3>
+          <p class="text-gray-600 mb-4">A brief description of your project. What it does, technologies used, etc.</p>
+          <a href="#" class="text-blue-600 hover:underline">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-blue-600 text-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-8">Get in Touch</h2>
+      <p class="text-lg mb-6">Feel free to reach out to me!</p>
+      <div class="flex justify-center space-x-6">
+        <a href="mailto:your.email@example.com" class="hover:underline">Email: your.email@example.com</a>
+        <a href="https://github.com/SaneleMathonsi" class="hover:underline">GitHub</a>
+        <a href="https://linkedin.com/in/yourusername" class="hover:underline">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-4 text-center">
+    <p>&copy; 2025 Sanele Mathonsi. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
